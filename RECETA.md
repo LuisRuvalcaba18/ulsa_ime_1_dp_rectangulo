@@ -10,11 +10,12 @@
 
 ``` text
 1. MOSTRAR "Bienvenido a mi programa de rectangulo"
-2. pedir base
-3. pedir altura
-4. MIENTRAS 
-5.realizar operaciones de area y perimetro
-5. MOSTRAR BASE
-6.MOSTRAR ALTURA
+2. MOSTRAR "ingresar BASE"
+3. MIENTRAS BASE sea <= 0 MOSTRAR "la base debe ser mayor a 0, vuelve  a ingresar otro numero"
+4. MOSTRAR "ingresar ALTURA"
+5. MIENTRAS ALTURA sea <= 0 MOSTRAR "la altura debe ser mayor a 0, intenta otro numero"
+6.realizar operaciones de area y perimetro (BASE * ALTURA Y 2(BASE + ALTURA))
+7. MOSTRAR BASE
+8.MOSTRAR ALTURA
 
 ```
