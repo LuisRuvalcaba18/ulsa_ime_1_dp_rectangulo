@@ -12,7 +12,8 @@
 1. MOSTRAR "Bienvenido a mi programa de rectangulo"
 2. pedir base
 3. pedir altura
-4. realizar operaciones de area y perimetro
+4. MIENTRAS 
+5.realizar operaciones de area y perimetro
 5. MOSTRAR BASE
 6.MOSTRAR ALTURA
 

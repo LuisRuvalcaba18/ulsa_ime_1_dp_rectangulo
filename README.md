@@ -33,22 +33,22 @@ _marcar error y dar el mensaje de que no es valido ya que no existen medidas neg
 _____
 
 **Invariante** (al salir del ciclo que pide el ancho, ¿qué es seguro sobre `ancho`?):
-_____
+__que es mayor a 0 y que es un dato del rectangulo___
 
 ## 4. Casos resueltos a mano (Fase 1)
 
 | Caso | Ancho | Alto | Área calculada a mano | Perímetro calculado a mano |
 |---|---|---|---|---|
-| 1 | _____ | _____ | _____ | _____ |
-| 2 (cuadrado) | _____ | _____ | _____ | _____ |
-| 3 (con decimales) | _____ | _____ | _____ | _____ |
+| 1 | __6___ | __8___ | __48___ | __28___ |
+| 2 (cuadrado) | __5___ | __5___ | ___25__ | __20___ |
+| 3 (con decimales) | __2.2___ | __3.3___ | __7.26___ | __11___ |
 
 ## 5. Receta en pseudocódigo (Fase 2)
 <!-- Tu receta va en el archivo RECETA.md. Aquí solo responde las preguntas. -->
 
-**¿Probé mi receta a mano con un caso válido y uno inválido?** Sí / No
-**¿Tuve que corregirla?** _____
-**¿Cuántas versiones de mi receta escribí hasta la final?** _____
+**¿Probé mi receta a mano con un caso válido y uno inválido?** Sí 
+**¿Tuve que corregirla?** __si___
+**¿Cuántas versiones de mi receta escribí hasta la final?** __3___
 
 ## 6. Cómo compilar y ejecutar (Fase 3)
 
@@ -58,7 +58,12 @@ g++ -Wall -Wextra -std=c++17 main.cpp -o rectangulo
 ```
 
 ## 7. Ejemplo de ejecución (Fase 3)
-<!-- Pega aquí lo que muestra tu programa en pantalla con un caso normal. -->
+<!-- Pega aquí lo que muestra tu programa en pantalla con un caso normal. -->PS C:\Users\luise\OneDrive\Documentos\diseñoprogramas\ulsa_ime_1_dp_rectangulo> ./rectangulo
+ingresar BASE5
+ingresar ALTURA6
+El area es:30
+El perimetro es:22
+PS C:\Users\luise\OneDrive\Documentos\diseñoprogramas\ulsa_ime_1_dp_rectangulo> 
 
 ```
 _____
@@ -67,9 +72,9 @@ _____
 ## 8. Experimentos (Fase 3)
 
 **Experimento A: ¿qué resultado dio `2 * ancho + alto` con 5 × 3? ¿Por qué?**
-_____
+__A=12 P=16___
 
-**Experimento B: sin validación, ¿qué mostró el programa con ancho -4 y alto 3? ¿Tiene sentido?**
+**Experimento B: sin validación, ¿qué mostró el programa con ancho -4 y alto 3? ¿Tiene sentido?**ingresar otro numero
 _____
 
 **Experimento C (opcional): con `int`, ¿qué pasó con 2.5 y con 100000 × 100000?**
@@ -79,15 +84,15 @@ _____
 
 | Caso | Ancho | Alto | Esperado | Obtenido | ¿Pasó? |
 |---|---|---|---|---|---|
-| Normal | 5 | 3 | Área 15, perímetro 16 | _____ | _____ |
-| Cuadrado | 4 | 4 | Área 16, perímetro 16 | _____ | _____ |
-| Decimales | 2.5 | 4 | Área 10, perímetro 13 | _____ | _____ |
-| Muy pequeño | 0.1 | 0.1 | Área 0.01, perímetro 0.4 | _____ | _____ |
-| Ancho cero | 0 | 3 | vuelve a pedir el ancho | _____ | _____ |
-| Alto negativo | 5 | -2 | vuelve a pedir el alto | _____ | _____ |
-| Texto | `abc` | 3 | `leerDecimal` vuelve a pedir | _____ | _____ |
-| Caso propio 1 | _____ | _____ | _____ | _____ | _____ |
-| Caso propio 2 | _____ | _____ | _____ | _____ | _____ |
+| Normal | 5 | 3 | Área 15, perímetro 16 | ___15 y 16__ | __si___ |
+| Cuadrado | 4 | 4 | Área 16, perímetro 16 | __16 y 16___ | __si___ |
+| Decimales | 2.5 | 4 | Área 10, perímetro 13 | _10 y 13__ | ___si__ |
+| Muy pequeño | 0.1 | 0.1 | Área 0.01, perímetro 0.4 |.01 y.4| _si__ |
+| Ancho cero | 0 | 3 | vuelve a pedir el ancho |vuelve a pedir| _no_|
+| Alto negativo | 5 | -2 | vuelve a pedir el alto |vuelve a pedir|no|
+| Texto | `abc` | 3 | `leerDecimal` vuelve a pedir | error | __no___ |
+| Caso propio 1 |-2|-4|ingresa otro valor |ingresa oto valor| _no__ |
+| Caso propio 2 |3|-5|ingresa otro valor|-15 y -4|si|
 
 ## 10. Bitácora de mejoras (Fase 4)
 
@@ -101,34 +106,34 @@ _____
 ## 11. Dudas para el profesor (Fase 3)
 
 | Duda | Lo que ya intenté |
-|---|---|
-| _____ | _____ |
+|--como excluir las letras -|-no supe como iniciar-|
+|por que solo vale numeros negativos en la parte de altura|busque en el codigo|
 
 ## 12. Reflexión final
 
 **¿Qué aprendí con esta práctica?**
-_____
+_____declarar variables
 
 **Ahora que terminé, ¿qué cambiaría de mi proceso?**
-_____
+_____el tambien excluir letras
 
 **¿Qué fue lo más difícil y cómo lo resolví?**
-_____
+_____excluir letras, no pude
 
 **¿Qué pregunta me quedó sin responder?**
-_____
+_____por que solo vale numeros negativos en altura y como excluir letras
 
 **Diseñar la receta desde cero, ¿fue más fácil o más difícil de lo que esperaba? ¿Qué haría distinto la próxima vez?**
-_____
+_____si la inicie desde cero, la dificultad fue media alta, intentaria ir en oreden
 
 ## 13. Lista de verificación antes de entregar (Fase 5)
 
-- [ ] Llené todas las secciones (no quedan `_____`)
-- [ ] Escribí mi receta completa en `RECETA.md` antes de programar
-- [ ] Mi programa compila sin advertencias
-- [ ] Probé todos los casos de la tabla
-- [ ] Hice los Experimentos A y B y dejé el código correcto al terminar
-- [ ] No modifiqué `utilerias.h`
-- [ ] Hice al menos 3 commits con mensajes claros
-- [ ] Hice `git push` y verifiqué mi fork en GitHub
-- [ ] Entregué el enlace de mi fork en Classroom
+- [f] Llené todas las secciones (no quedan `_____`)
+- [ v] Escribí mi receta completa en `RECETA.md` antes de programar
+- [v ] Mi programa compila sin advertencias
+- [ v] Probé todos los casos de la tabla
+- [ f] Hice los Experimentos A y B y dejé el código correcto al terminar
+- [v ] No modifiqué `utilerias.h`
+- [ v] Hice al menos 3 commits con mensajes claros
+- [v ] Hice `git push` y verifiqué mi fork en GitHub
+- [ v] Entregué el enlace de mi fork en Classroom

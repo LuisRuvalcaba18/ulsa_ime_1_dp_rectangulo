@@ -13,15 +13,15 @@ int main() {
     double BASE;
     double AREA;
     double PERIMETRO;
-    std::cout << "ingresar BASE";
+    std::cout << "ingresar BASE:";
     std::cin >> BASE;
     while (BASE <= 0){
         std::cout <<"la base debe ser mayor a 0, vuelve a ingresar otro numero";
         std::cin >> BASE;
     }
-    std::cout << "ingresar ALTURA";
+    std::cout << "ingresar ALTURA:";
     std::cin >> ALTURA;
-    while (BASE <= 0){
+    while (ALTURA <= 0){
         std::cout <<"la altura debe ser mayor a 0, intenta otro numero";
         std::cin >> ALTURA;
     }
