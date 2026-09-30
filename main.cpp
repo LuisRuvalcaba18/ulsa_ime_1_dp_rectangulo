@@ -9,7 +9,28 @@ int main() {
     // 1. Variables (siempre inicializadas)
     //    TODO: ¿qué variables necesitas? ¿De qué tipo? ¿Con qué valor empiezan?
 
-    std::cout << "Area y perimetro de un rectangulo\n";
+    double ALTURA;
+    double BASE;
+    double AREA;
+    double PERIMETRO;
+    std::cout << "ingresar BASE";
+    std::cin >> BASE;
+    while (BASE <= 0){
+        std::cout <<"la base debe ser mayor a 0, vuelve a ingresar otro numero";
+        std::cin >> BASE;
+    }
+    std::cout << "ingresar ALTURA";
+    std::cin >> ALTURA;
+    while (BASE <= 0){
+        std::cout <<"la altura debe ser mayor a 0, intenta otro numero";
+        std::cin >> ALTURA;
+    }
+    AREA= BASE * ALTURA;
+    PERIMETRO= 2 * (BASE + ALTURA);
+
+    std::cout <<"El area es:" <<AREA <<std::endl;
+    std::cout <<"El perimetro es:" <<PERIMETRO <<std::endl;
+
 
     // 2. Entrada: el ancho
     //    TODO: lee el ancho con leerDecimal("...")
